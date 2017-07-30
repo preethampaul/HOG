@@ -1,7 +1,7 @@
 # Histogram Of Oriented Gradients (HOG)
 HOG method is one of the famous techniques for object recognition and edge detection. This method has been proposed by N. Dalal and B. Triggs in their research paper - "Histograms of Oriented Gradients for Human Detection, CVPR, 2005". The method is quite simple to devise and has been first experimented for human detection (that is, pedestrians on roads). Soon, this technique took it's way to the detection of other objects. The method has the reputation of achieving upto 98 % accuracy for human detection. In a paper written by Robert Arroyo and Miguel Angel Sotelo (the paper can be found at https://www.researchgate.net/publication/260351106 ), it has been mentioned that use of HOG along with SVM classifier fetches an accuracy upto 93% for car logo recognition.
 
-The code is written in ##PYTHON and ##TENSORFLOW
+The code is written in PYTHON and TENSORFLOW
 
 ## Getting Started - Feature Extraction Using HOG
 The HOG descriptor's code uploaded here, is for classification of car logos.
