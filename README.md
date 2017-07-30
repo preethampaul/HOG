@@ -53,17 +53,9 @@ When prompted, for Logistic Classification: enter 'LOGIST';	for Linear SVM Mulit
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Sunkari Preetham Paul** - [Impetuors]
+This has been created as a part of the project, with the team : Impetuors (Sunkari Preetham Paul, Praphul Kumar, Harshit Saini, Aadrish Sharma)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
+This project is licensed under the Apache License, Version 2.0 - see the [LICENSE.md](LICENSE.md) file for details
