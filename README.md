@@ -22,39 +22,34 @@ Follow the following links for installing the prerequisites:
 ## Browsing the folder
 The folder contains a zip file called logos.zip, which contains the data set for training the HOG-SVM. This can be downloaded and extracted to the folder 'new_train_data' (make folder if not present...)
 
-### Break down into end to end tests
+Use the code 'prepare_data.py' to prepare data (if data from logos.zip is not being used)
+Use the code 'hog.py' to extract hog features.
+Use the code 'train.py' to train Linear SVM or Logistic Classifier
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+### hog.py
+Contains the required functions for extracting histograms from images after pre-processing. Run the following code:
 
 ```
-Give an example
+hog.py
 ```
 
-## Deployment
+### train.py
+Extract the downloaded data, into the folder - 'new_train_data' in current folder < OR > If the data is not of logos as downloaded, make the data folders classwise as needed.
+First run the other code - 'prepare_data.py'; for this, create the data as needed in the folder - 'raw_train_data', in current folder. The main 'raw_data_folder', must contain sub-folders of classes (ex: BRANDS), then each of these folders must contain sub-folders of labels (ex: MODELS), and then the relevant data must be in the respective folders. The data for training will be saved in the 'new_train_data'
+The default paths can be changed in the beginning of each code. But, this is not recommended
+Run the train.py code as follows:
 
-Add additional notes about how to deploy this on a live system
+1) For training data :
+```
+train.py train
+```
+When prompted, for Logistic Classification: enter 'LOGIST'; for Linear SVM MulitClass classification : enter 'SVM'
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+2) For classifying based on folder names in the 'new_train_data' :
+```
+train.py classify
+```
+When prompted, for Logistic Classification: enter 'LOGIST';	for Linear SVM MulitClass classification : enter 'SVM'
 
 ## Authors
 
